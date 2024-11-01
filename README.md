@@ -276,17 +276,11 @@ cat > file23
 1001 | Ram | 10000 | HR
 ^d
 
-
-
 sed -n -e '3p' file23
 ## OUTPUT
-
 1002 | tom |  5000 | Admin
 sed -n -e '$p' file23
 ## OUTPUT
-
-
-```
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
@@ -405,8 +399,7 @@ $1003 | Joe |  7000 | Developer
 
 sed -n '2,4{s/$/*/;p}' file23
 
-
-#Sorting File content
+## Sorting File content
 
 cat > file21
 
@@ -643,7 +636,7 @@ else
 echo "$val1 is less than $val2"
 fi
 
-##OUTPUT
+## OUTPUT
 
 val1=baseball
  val2=hockey
@@ -752,8 +745,6 @@ echo “The values are different”
 fi
 ^d
 
-
-
 cat iftest.sh 
 bash
 \#!/bin/bash
@@ -774,7 +765,7 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
 
 “The test value 10 is greater than 5”
  “The values are different”
@@ -801,7 +792,6 @@ echo “Sorry, the object does not exist”
 fi
 ^d
 
-
 cat ifnested.sh 
 bash
 \#!/bin/bash
@@ -822,11 +812,10 @@ else
 echo “Sorry, the object does not exist”
 fi
 
-
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
 
 “/root The object exists, is it a file?”
  “No,/root it is not a file!”
@@ -901,7 +890,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
-##OUTPUT:
+## OUTPUT:
 
 Welcome Ram/Rahim
  Please enjoy your visit
@@ -923,7 +912,7 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
-##OUTPUT:
+## OUTPUT:
 
 10
  9
@@ -948,7 +937,7 @@ var1=$[ $var1 - 25 ]
 done
  
 $ chmod 755 untiltest.sh
-##OUTPUT
+## OUTPUT
 
 100
  75
